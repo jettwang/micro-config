@@ -5,8 +5,10 @@ string:
 ---
 string:
   profiles: dev ##开发环境 
-  application: microservicecloud-dev
+  application: 
+    name: microservicecloud-dev
 ---
 string:
   profiles: test  #测试环境
-  application: microservicelou-test
+  application: 
+    name: microservicelou-test
