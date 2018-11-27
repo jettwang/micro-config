@@ -1,0 +1,26 @@
+string:
+  profiles:
+    active:
+      - dev
+---
+server :
+  port: 8201
+string:
+  profiles: dev ##开发环境 
+  application: 
+    name: microservicecloud-dev-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001
+---
+server:
+  port: 8202
+string:
+  profiles: test  #测试环境
+  application: 
+    name: microservicelou-test-client
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:1001
